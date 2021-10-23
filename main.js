@@ -77,7 +77,7 @@ function up()
 
 function down()
 {
-	if(greencar_y >=500 ){
+	if(greencar_y <=350 ){
 		greencar_y = greencar_y + 10;
 		console.log("When down arrow is pressed , x = " + greencar_x + " | y = " + greencar_y );
 		uploadBackground();
@@ -97,7 +97,7 @@ function left()
 
 function right()
 {
-	if(greencar_x >=700 ){
+	if(greencar_x <=700 ){
 		greencar_y = greencar_y + 10;
 		console.log("When right arrow is pressed , x = " + greencar_x + " | y = " + greencar_y );
 		uploadBackground();
