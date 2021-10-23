@@ -1,8 +1,8 @@
 canvas = document.getElementById('myCanvas');
 ctx = canvas.getContext("2d");
 
-greencar_height = 75;
-greencar_width = 100;
+greencar_height = 100;
+greencar_width = 75;
 
 background_image = "parkingLot.jpg";
 greencar_image = "car2.png";
@@ -18,7 +18,7 @@ background_imgTag.src = background_image;
 
 greencar_imgTag = new Image();
 greencar_imgTag.onload = uploadgreencar;
-greencar_image.src = greencar_image;
+greencar_imgTag.src = greencar_image;
 }
 
 function uploadBackground() {
@@ -98,7 +98,7 @@ function left()
 function right()
 {
 	if(greencar_x <=700 ){
-		greencar_y = greencar_y + 10;
+		greencar_x = greencar_x + 10;
 		console.log("When right arrow is pressed , x = " + greencar_x + " | y = " + greencar_y );
 		uploadBackground();
 		uploadgreencar();
